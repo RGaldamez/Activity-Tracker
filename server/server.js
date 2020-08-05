@@ -20,6 +20,27 @@ app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
 });
 
+db.query("SELECT NOW()", (err, res) => {
+  const { rows } = res;
+  const { now } = rows[0];
+
+  console.log(`Connected to DB at ${now} `);
+});
+
 app.get("/", (req, res) => {
   res.send("Backend Server is running");
 });
+
+// app.post("/user", async (req, res) => {
+//   try {
+//     const { email, role } = req.body;
+//     // console.log(email, role);
+//     const newUser = await db.query(
+//       `INSERT INTO users(email, role)
+//       VALUES ('${email}','${role}') RETURNING *;`
+//     );
+//     res.send(newUser);
+//   } catch (error) {
+//     console.error(error.message);
+//   }
+// });

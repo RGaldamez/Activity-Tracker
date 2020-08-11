@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import "bootstrap/dist/css/bootstrap.css"; //for react-boostrap
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 import reducers from "./reducers/index";
 import App from "./App";
 

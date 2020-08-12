@@ -17,3 +17,7 @@
 .thick-navbar {
   padding: 20px;
 }
+
+.nav-center-item {
+  align-self: center;
+}

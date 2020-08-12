@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import LoginButton from "./LoginButton";
 
 const NavBar = () => {
   return (
@@ -19,11 +19,12 @@ const NavBar = () => {
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'></Nav>
         <Nav>
-          <LinkContainer to='/Login'>
-            <Nav.Link>Login</Nav.Link>
-          </LinkContainer>
+          <Nav.Link>
+            <LoginButton />
+          </Nav.Link>
+
           <LinkContainer to='/About'>
-            <Nav.Link>About</Nav.Link>
+            <Nav.Link className='nav-center-item'>About</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import LoginButton from "./LoginButton";
 const LandingBody = () => {
   return (
     <div>
@@ -7,7 +7,10 @@ const LandingBody = () => {
         <div className='landing-overlay'>
           <p className=' main-header'>Don't let your time manage you.</p>
           <div className='btn-header-container'>
-            <button className='btn btn-info btn-header'> Get Started </button>
+            {/* <button className='btn btn-info btn-header'> Get Started </button> */}
+            <LoginButton
+              custom={{ style: "btn btn-info btn-header", text: "Get Started" }}
+            />
           </div>
         </div>
       </div>

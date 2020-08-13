@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <div className='row footer-main mr-0 pt-4 pb-4'>
-        <div className='col-xs-12 col-md-7 col-lg-7'>
+        <div className='col-xs-12 col-md-6 offset-md-1 col-lg-6 offset-lg-1'>
           <div className='container'>
             <h4>Footer Content</h4>
             <p>

@@ -1,8 +1,8 @@
 import React from "react";
-import Layout from "../components/Layout";
+import LandingLayout from "../components/LandingLayout";
 
 const Landing = () => {
-  return <Layout />;
+  return <LandingLayout />;
 };
 
 export default Landing;

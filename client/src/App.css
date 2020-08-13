@@ -21,3 +21,32 @@
 .nav-center-item {
   align-self: center;
 }
+
+.main-header {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+  color: white;
+  font-size: 50px;
+}
+.btn-header-container {
+  position: absolute;
+
+  text-align: center;
+  z-index: 9999;
+  margin: 0px;
+  left: 50%;
+  top: 70%;
+}
+.btn-header {
+  font-size: 30px;
+  margin-left: -100%;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-center-item {
+    align-self: auto;
+  }
+}

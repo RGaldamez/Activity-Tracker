@@ -5,13 +5,7 @@ import LoginButton from "./LoginButton";
 
 const NavBar = () => {
   return (
-    <Navbar
-      collapseOnSelect
-      expand='lg'
-      bg='dark'
-      variant='dark'
-      className='thick-navbars'
-    >
+    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
       <LinkContainer to='/'>
         <Navbar.Brand>MyFocus</Navbar.Brand>
       </LinkContainer>

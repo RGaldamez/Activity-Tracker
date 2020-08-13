@@ -1,3 +1,13 @@
+/* info color #138496 */
+/* dark color #343A40 */
+/* 
+Extra small <576px	
+Small ≥576px	
+Medium ≥768px	
+Large ≥992px	
+Extra large ≥1200px 
+*/
+
 .landing-picture {
   height: 100vh;
   min-height: 700px;
@@ -45,8 +55,49 @@
   margin-left: -100%;
 }
 
-@media only screen and (max-width: 991px) {
+.footer-main {
+  background-color: #343a40;
+  color: white;
+}
+.footer-sub {
+  background-color: #232629;
+}
+.hide-overflow {
+  overflow: hidden;
+}
+
+.footer-link {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.footer-link:hover {
+  color: #138496;
+}
+
+@media only screen and (max-width: 992px) {
   .nav-center-item {
     align-self: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-header-container {
+    top: 80%;
+  }
+  .btn-header {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .btn-header-container {
+    top: 70%;
+  }
+  .btn-header {
+    font-size: 30px;
+  }
+  .main-header {
+    font-size: 30px;
   }
 }
